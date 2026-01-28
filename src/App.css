@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -33,10 +36,81 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
   color: #888;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.card {
+  width: 100%;
+  padding: 2em;
+  margin: 1rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  color: #000000;
+
+}
+
+.item-holder {
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+
+.item {
+  display: flex;
+  font-family: "Nunito", sans-serif;
+}
+
+.item>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item>div p {
+  font-family: inherit;
+  margin: 0;
+  text-align: start;
+}
+
+.item>div .quantity {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.item>.img-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  overflow: hidden;
+  border: 1px solid rgb(193, 190, 197);
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  height: fit-content;
+}
+
+.item>.img-holder>img {
+  width: 100%;
+  height: auto;
+}
+
+.summary {
+  font-family: "Nunito", sans-serif;
+  border: 1px solid rgb(193, 190, 197);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem 0rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-item p {
+  margin: 0;
+  margin-top: 0.5rem;
 }
